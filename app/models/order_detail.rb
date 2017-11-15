@@ -1,4 +1,4 @@
 class OrderDetail < ApplicationRecord
-  belongs_to :order
-  belongs_to :dish
+  belongs_to :order, optional: true
+  belongs_to :dish, optional: true
 end
