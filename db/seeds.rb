@@ -71,3 +71,13 @@ Shop.find(2).kinds = Kind.where(id: 3)
 Shop.find(3).kinds = Kind.where(id: [1, 3])
 Shop.find(4).kinds = Kind.where(id: 4)
 Shop.find(5).kinds = Kind.where(id: [3, 4])
+
+#order
+Order.create(order_date: "2017-11-10 08:10:15", delivery_date: "2017-11-11 20:00:00", delivery_address: "東京都中央区の中心事務所", user_id: 1, shop_id: 1)
+OrderDetail.create(quantity: 3, order_id: 1, dish_id: 2)
+OrderDetail.create(quantity: 2, order_id: 1, dish_id: 3)
+OrderDetail.create(quantity: 1, order_id: 1, dish_id: 4)
+
+Order.create(order_date: "2017-11-11 09:12:12", delivery_date: "2017-11-12 10:00:00", delivery_address: "東京都渋谷区DIC事務所4階", user_id: 3, shop_id: 5)
+OrderDetail.create(quantity: 4, order_id: 2, dish_id: 6)
+OrderDetail.create(quantity: 1, order_id: 2, dish_id: 9)
