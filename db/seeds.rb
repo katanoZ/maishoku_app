@@ -1,7 +1,42 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#master_data
+Area.create(prefecture: "東京都", city: "中央区", house_number: "1-1-1")
+Area.create(prefecture: "東京都", city: "中央区", house_number: "1-2-3")
+Area.create(prefecture: "東京都", city: "中央区", house_number: "9-9-9")
+Area.create(prefecture: "東京都", city: "渋谷区", house_number: "1-1-1")
+Area.create(prefecture: "大阪府", city: "中央区", house_number: "1-1-1")
+Area.create(prefecture: "大阪府", city: "北区", house_number: "1-1-1")
+
+Genre.create(name: "インド", description: "インド料理をお届けします！")
+Genre.create(name: "中華", description: "中華料理をお届けします！")
+Genre.create(name: "寿司", description: "寿司をお届けします！")
+Genre.create(name: "弁当", description: "弁当をお届けします！")
+Genre.create(name: "ヘルシー", description: "ヘルシー料理をお届けします！")
+
+Shop.create(name: "中華百番", description: "中華料理が得意です！")
+Shop.create(name: "カレーの帝王", description: "カレーが得意です！")
+Shop.create(name: "和食の山奥", description: "和食ならお任せください")
+Shop.create(name: "超スピード弁当", description: "どんな弁当でも作ります")
+Shop.create(name: "かわうそ寿司", description: "握り一筋30年")
+
+Kind.create(name: "サラダ")
+Kind.create(name: "前菜")
+Kind.create(name: "一品料理")
+Kind.create(name: "選べるお弁当")
+
+Dish.create(name: "インドカレー", content: "本格派のインドカレーです", price: 500)
+Dish.create(name: "五目焼き飯", content: "人気の焼き飯です", price: 280)
+Dish.create(name: "餃子", content: "人気の餃子です", price: 180)
+Dish.create(name: "麻婆豆腐", content: "中華料理の一番人気は麻婆豆腐です", price: 600)
+Dish.create(name: "中華丼", content: "みんな大好き中華丼です", price: 380)
+Dish.create(name: "寿司セット", content: "人気寿司のセットです", price: 800)
+Dish.create(name: "日替わり弁当", content: "日替わりメニューのお弁当です", price: 450)
+Dish.create(name: "ヘルシーサラダ", content: "１日分の野菜が採れるサラダです", price: 350)
+Dish.create(name: "ヘルシー寿司弁当", content: "ヘルシーな寿司弁当です", price: 800)
+Dish.create(name: "豪華寿司弁当", content: "かなり豪華な寿司弁当です", price: 1000)
+
+User.create(name: "市川一郎", email: "ichiro@test.com", phone_number: "111-1111")
+User.create(name: "仁川二郎", email: "jiro@test.com", phone_number: "222-2222")
+User.create(name: "三田三郎", email: "saburo@test.com", phone_number: "333-3333")
+User.create(name: "四谷四郎", email: "siro@test.com", phone_number: "444-4444")
+User.create(name: "五味五郎", email: "goro@test.com", phone_number: "555-5555")
+User.create(name: "六甲六郎", email: "rokuro@test.com", phone_number: "666-6666")
